@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/vendors/angular.js"></script>
-    <script src="/scripts/client.js"></script>
-    <link href="/styles/style.css" rel="stylesheet">
+    <script src="./vendors/angular.js"></script>
+    <script src="./scripts/client.js"></script>
+    <link href="./styles/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body ng-app="LifeApp" ng-controller="PictureController as vm">
+    <p>vm.message: {{vm.message}}</p>
+    <div>
+        <h3>Sydney</h3>
+        <img ng-src="./images/Sydney_Harbour_Bridge.jpg">
+    </div>
     
 </body>
 </html>
+
