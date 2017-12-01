@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./vendors/angular.js"></script>
     <script src="./scripts/client.js"></script>
+    <link href="./styles/bootstrap.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body ng-app="LifeApp" ng-controller="PictureController as vm">
     <p>vm.message: {{vm.message}}</p>
-    <div>
+    <div class="container">
+        <div class="row">
         <h3>Sydney</h3>
-        <img ng-src="./images/Sydney_Harbour_Bridge.jpg">
+        <div class="col-md-4">
+        <img class="sydney" ng-src="./images/Sydney_Harbour_Bridge.jpg">
+        </div>
+        </div>
     </div>
     
 </body>
