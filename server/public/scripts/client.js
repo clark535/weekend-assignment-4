@@ -45,14 +45,14 @@ myApp.controller('PictureController', ['$http', function($http){
         {
             image: "./images/Jax_and_Autumn_2.jpg",
             story: `My children, Jax and Autumn. My sun rises and sets with them. They are the great motive force in my life
-            and the reason I strive to be a better humanbeing. Jax is three and Autumn a bt over one and a half. Quiet is a rare state at our house.`,
+            and the reason I strive to be a better humanbeing. Jax is three and Autumn a bit over one and a half. Quiet is a rare state at our house.`,
             show: false,
             like: 0,
             views: 0.5
         },
         {
             image: "./images/Me_and_Kelsey.jpg",
-            story: `My beautiful wife Kelsey, whome I owe just about everything good in my life too. We met only a week after I returned from Japan and 
+            story: `My beautiful wife Kelsey, whom I owe just about everything good in my life too. We met only a week after I returned from Japan and 
             have not been apart since. The last seven years have been amazing because I have shared them with her.`,
             show: false,
             like: 0,
