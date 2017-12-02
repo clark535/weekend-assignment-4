@@ -23,11 +23,13 @@ self.addStory = function(life) {
     } else if (life.show == true) {
         life.show = false;
     }
-        life.like ++;
+        
      
-}
+};
 
-
+self.likeCounter = function(life) {
+    life.like ++;
+};
 
 
 

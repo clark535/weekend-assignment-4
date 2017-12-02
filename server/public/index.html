@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./vendors/angular.js"></script>
     <script src="./scripts/client.js"></script>
-    <link href="./styles/bootstrap.css" rel="stylesheet">
-    <link href="./styles/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="./styles/style.css" rel="stylesheet">
-    <title>Document</title>
+    <title>My Picture Gallery</title>
 </head>
 <body ng-app="LifeApp" ng-controller="PictureController as vm">
-    <p>vm.message: {{vm.message}}</p>
+    <h1>Dave's Life in Picture</h1>
     <div class="container">
         <div class="row">
         <h3>Sydney</h3>
@@ -20,9 +19,10 @@
         <img class="sydney" ng-src={{gallery.image}} ng-click="vm.addStory(gallery)">
         <p ng-if="gallery.show">
             {{gallery.story}}
-        </p>
-        <button type="submit" class="btn btn-info">Likes: </button>
+       
+        <button type="submit" ng-click="vm.likeCounter(gallery)" class="btn btn-info">Likes: {{gallery.like}}</button>
                 <span class="glyphicon glyphicon-thumbs-up"></span>
+            </p>
         </div>
         </div>
     </div>
