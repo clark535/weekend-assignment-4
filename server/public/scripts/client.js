@@ -1,9 +1,9 @@
-var myApp = angular.module('LifeApp', []);//dont have to be the same, but should
+var myApp = angular.module('LifeApp', []);
 
 myApp.controller('PictureController', ['$http', function($http){
     console.log('picture controller has been loaded');
     var self = this;
-    self.message = 'Get your picutres up';
+    self.message = 'Get your picutres up';//test message.
 
     self.picturesArray = [
         {
@@ -59,7 +59,7 @@ myApp.controller('PictureController', ['$http', function($http){
             views: 0.5
         }
 
-    ]
+    ]//end my array of life opbjects
 
 self.addStory = function(life) {
     if (life.show == false) {
@@ -69,11 +69,11 @@ self.addStory = function(life) {
     }
         life.views +=0.5;
      
-};
+};//function to show the story text when the function is clicked, added view counter too.
 
 self.likeCounter = function(life) {
     life.like ++;
-};
+};//simple like counter function.
 
 
 
