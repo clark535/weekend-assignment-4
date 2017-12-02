@@ -59,7 +59,7 @@ myApp.controller('PictureController', ['$http', function($http){
             views: 0.5
         }
 
-    ]//end my array of life opbjects
+    ]//end my array of life objects.
 
 self.addStory = function(life) {
     if (life.show == false) {
