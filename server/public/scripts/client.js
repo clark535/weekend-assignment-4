@@ -7,12 +7,13 @@ myApp.controller('PictureController', ['$http', function($http){
 
     self.picturesArray = [
         {
-        image: "./images/Sydney_Harbour_Bridge.jpg",
-        story: `I lived in Sydney right next to the bridge for 
-        several months and had the time of my life. I made a ton of great friends and memories, 
-        inculding scubba diving on the great barrier reef and bundgy jumping in a rainforest.`,
-        show: false,
-        like: 0
+            image: "./images/Sydney_Harbour_Bridge.jpg",
+            story: `I lived in Sydney right next to the bridge for 
+            several months and had the time of my life. I made a ton of great friends and memories, 
+            inculding scubba diving on the great barrier reef and bundgy jumping in a rainforest.`,
+            show: false,
+            like: 0,
+            views: 0.5
         },
         {
             image: "./images/Japan.jpg",
@@ -20,7 +21,8 @@ myApp.controller('PictureController', ['$http', function($http){
             foreign country on the otherside of the world will change anybody. I learned quite a bit about 
             Asian culture and myself. This was a life changing experience.`,
             show: false,
-            like: 0
+            like: 0,
+            views: 0.5
         },
         {
             image: "./images/Castle.jpg",
@@ -28,7 +30,8 @@ myApp.controller('PictureController', ['$http', function($http){
             I constantly imagine myself in historical events and wonder how I would react. It is amazing 
             how often history can repeat itself in the present.`,
             show: false,
-            like: 0
+            like: 0,
+            views: 0.5
         },
         {
             image: "./images/Jupiter_europa.jpg",
@@ -36,21 +39,24 @@ myApp.controller('PictureController', ['$http', function($http){
             Not only is space humanities litteral destiny, but it is also symbolic of both the danger and wonder that awaits our species future.
             That is an original quote, you heard it here first.`,
             show: false,
-            like: 0
+            like: 0,
+            views: 0.5
         },
         {
             image: "./images/Jax_and_Autumn_2.jpg",
             story: `My children, Jax and Autumn. My sun rises and sets with them. They are the great motive force in my life
             and the reason I strive to be a better humanbeing. Jax is three and Autumn a bt over one and a half. Quiet is a rare state at our house.`,
             show: false,
-            like: 0
+            like: 0,
+            views: 0.5
         },
         {
             image: "./images/Me_and_Kelsey.jpg",
             story: `My beautiful wife Kelsey, whome I owe just about everything good in my life too. We met only a week after I returned from Japan and 
             have not been apart since. The last seven years have been amazing because I have shared them with her.`,
             show: false,
-            like: 0
+            like: 0,
+            views: 0.5
         }
 
     ]
@@ -61,7 +67,7 @@ self.addStory = function(life) {
     } else if (life.show == true) {
         life.show = false;
     }
-        
+        life.views +=0.5;
      
 };
 
