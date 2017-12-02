@@ -31,7 +31,7 @@ myApp.controller('PictureController', ['$http', function($http){
             like: 0
         },
         {
-            image: "./image/Jupiter_europa.jpg",
+            image: "./images/Jupiter_europa.jpg",
             story: `Jupiter is my favorite planet, but this picture is indicative of my life long fascination with the cosmos.
             Not only is space humanities litteral destiny, but it is also symbolic of both the danger and wonder that awaits our species future.
             That is an original quote, you heard it here first.`,
@@ -39,7 +39,18 @@ myApp.controller('PictureController', ['$http', function($http){
             like: 0
         },
         {
-            image: 
+            image: "./images/Jax_and_Autumn_2.jpg",
+            story: `My children, Jax and Autumn. My sun rises and sets with them. They are the great motive force in my life
+            and the reason I strive to be a better humanbeing. Jax is three and Autumn a bt over one and a half. Quiet is a rare state at our house.`,
+            show: false,
+            like: 0
+        },
+        {
+            image: "./images/Me_and_Kelsey.jpg",
+            story: `My beautiful wife Kelsey, whome I owe just about everything good in my life too. We met only a week after I returned from Japan and 
+            have not been apart since. The last seven years have been amazing because I have shared them with her.`,
+            show: false,
+            like: 0
         }
 
     ]

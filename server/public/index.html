@@ -10,17 +10,16 @@
     <link href="./styles/style.css" rel="stylesheet">
     <title>My Picture Gallery</title>
 </head>
-<body ng-app="LifeApp" ng-controller="PictureController as vm">
+<body style="background-color: lightskyblue" ng-app="LifeApp" ng-controller="PictureController as vm">
     <h1>Dave's Life in Picture</h1>
     <div class="container">
         <div class="row">
-        <h3>Sydney</h3>
         <div class="col-sm-4" ng-repeat="gallery in vm.picturesArray"> 
-        <img class="sydney" ng-src={{gallery.image}} ng-click="vm.addStory(gallery)">
+        <img class="pictures" ng-src={{gallery.image}} ng-click="vm.addStory(gallery)">
         <p ng-if="gallery.show">
             {{gallery.story}}
        
-        <button type="submit" ng-click="vm.likeCounter(gallery)" class="btn btn-info">Likes: {{gallery.like}}</button>
+        <button type="submit" ng-click="vm.likeCounter(gallery)" class="btn btn-success">Likes: {{gallery.like}}</button>
                 <span class="glyphicon glyphicon-thumbs-up"></span>
             </p>
         </div>
@@ -29,5 +28,3 @@
     
 </body>
 </html>
-
-<!-- ng-init="mySydney = './images/Sydney_Harbour_Bridge.jpg'"> -->

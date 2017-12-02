@@ -1,4 +1,11 @@
-.sydney {
+.pictures {
     height: 300px;
     width: 300px;
-}
+    border: 6px solid white;
+    border-radius: 15px;
+};
+
+body-bg {
+    background-color: rgb(55, 170, 236);
+};
+
